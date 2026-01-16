@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Card */
+.password-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.password-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #ccc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background: transparent;
+}
+
+.input::placeholder {
+  letter-spacing: 0;
+}
+
+/* Copy Icon */
+.fa-copy {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #555;
+  transition: 0.3s;
+}
+
+.fa-copy:hover {
+  color: #764ba2;
+  transform: scale(1.2);
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: #764ba2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5a3d8a;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Alert */
+.alert-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #4caf50;
+  color: white;
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease;
+}
+
+/* Hidden State */
+.active.alert-container {
+  right: -300px;
+}
